@@ -1,0 +1,28 @@
+.top {
+  height: 50px;
+  line-height: 50px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: #FAFAFA;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 500;
+  font-size: 15px;
+}
+
+.top:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid #CCCCCC;
+  color: #CCCCCC;
+  -webkit-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  -webkit-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}

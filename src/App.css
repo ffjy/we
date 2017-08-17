@@ -1,0 +1,9 @@
+body {
+    background-color: #eee;  
+}
+html, body, #root, .main {
+  height: 100%;
+}
+.main {
+  position: relative;
+}
