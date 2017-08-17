@@ -1,0 +1,15 @@
+.knowledge-main {
+    margin: 0 25px;
+}
+
+.knowledge {
+    padding-top: 100px;
+}
+
+.knowledge-detail {
+    margin-top: 100px;
+}
+
+.knowledge .menu-item {
+    display: block;
+}

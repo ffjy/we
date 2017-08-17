@@ -26,3 +26,7 @@
   -ms-transform: scaleY(0.5);
   transform: scaleY(0.5);
 }
+
+.top .weui-cell_select-before .weui-cell__hd:before {
+  border-width: 0 2px 2px 0;
+}

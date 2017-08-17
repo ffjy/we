@@ -6,4 +6,12 @@ html, body, #root, .main {
 }
 .main {
   position: relative;
+padding-bottom: 60px;
+    box-sizing: border-box;
+}
+a {
+    color: inherit;
+}
+a:hover, a:focus {
+    color: inherit;
 }

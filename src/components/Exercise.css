@@ -5,3 +5,9 @@
 .exercise-main {
   padding: 0 15px;
 }
+.now {
+  margin-bottom: 50px;
+}
+.now .weui-cell {
+  padding: 25px 15px;
+}

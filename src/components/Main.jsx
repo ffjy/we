@@ -1,57 +1,60 @@
 import React, { Component } from 'react'
 import { 
-  Select, Page, NavBar, NavBarItem,
-  Form, FormCell, Cell, CellBody, CellHeader,
+  Select, Page,
+  FormCell, CellHeader,
   Grids, Icon
 } from 'react-weui'
+import { Link } from 'react-router-dom'
 import './Main.css'
 import MyTop from './Top'
 import MyFooter from './Footer'
-import imgSrc from '../timg.jpg'
+
 class Main extends Component {
 
   constructor() {
     super()
     this.state = {
       navs: [{
-        icon: <Icon value="success" />,
-        label: '通关练习',
-        href: '/exercise'
+          icon: <Link to="/exercise"><Icon value="success" /></Link>,
+          label: '通关练习'
       }, {
         icon: <Icon value="warn" />,
-        label: '错题集',
-        href: '#'
+        label: '错题集'
       }, {
         icon: <Icon value="waiting"/>,
-        label: '模考',
-        href: '#'
+        label: '模考'
       }, {
-        icon: <Icon value="download" />,
-        label: '考点解析',
-        href: '#'
+          icon: <Link to="/knowledge"><Icon value="download" /></Link>,
+          label: '考点解析'
       }, {
         icon: <Icon value="circle"/>,
-        label: '我的',
-        href: '#'
+        label: '我的'
       }, {
         icon: <Icon value="search" />,
-        label: '其它功能敬请期待',
-        href: '#'
+        label: '其它功能敬请期待'
       }]
     }
   }
 
+  handleChange(e) {
+    if (this.props.index === e.target.value) return
+    this.props.change_schedule_index(e.target.value)
+  }
+
   render() {
+    console.log(this.props)
     return (
       <Page>
         <MyTop>
           <div className="select">
             <FormCell select selectPos="before">
               <CellHeader>
-                <Select>
-                  <option value="地理">地理</option>
-                  <option value="英语">英语</option>
-                  <option value="技术">技术</option>
+                <Select onChange={this.handleChange.bind(this)} defaultValue={this.props.schedule.index}>
+                    {
+                      this.props.schedule.options.map((option, index) => {
+                        return <option value={index} key={option.id}>{option.name}</option>
+                      })
+                    }
                 </Select>
               </CellHeader>
             </FormCell>
@@ -61,7 +64,7 @@ class Main extends Component {
         <div className="navs">
           <Grids data={this.state.navs} />
         </div>
-        <MyFooter></MyFooter>
+        <MyFooter />
       </Page>
     )
   }

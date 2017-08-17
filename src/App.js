@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
-  Route,
-  Link
+  Route
 } from 'react-router-dom'
 
 import './App.css'
-import Main from './components/Main'
-import Exercise from './components/Exercise'
+import Main from './container/Main'
+import Exercise from './container/Exercise'
+import Knowledge from './container/Knowledge'
 
 class App extends Component {
 
@@ -18,10 +18,11 @@ class App extends Component {
           <div>
             <Route exact path="/" component={Main} />
             <Route path="/exercise" component={Exercise} />
+            <Route path="/knowledge" component={Knowledge} />
           </div>
         </Router>
       </div>
-    );
+    )
   }
 }
 

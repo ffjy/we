@@ -13,7 +13,7 @@ class Top extends Component {
 }
 
 Top.propTypes = {
-  children: PropTypes.array.isRequired
+  children: PropTypes.any.isRequired
 }
 
 export default Top
