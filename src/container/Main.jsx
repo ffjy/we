@@ -12,4 +12,6 @@ const mapDispatchToProps = {
     ...actions
 }
 
+
+
 export default connect(mapStateToProps, mapDispatchToProps)(Main)

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import Top from './Top'
 import Back from './Back'
 import Footer from './Footer'
+import * as storage from '../utils/store'
 import './Knowledge.css'
 
 class Knowledge extends Component {
@@ -15,24 +16,66 @@ class Knowledge extends Component {
     }
 
     componentWillMount() {
-
-        console.log(window.location.pathname.indexOf('/knowledge/'))
-        let path = window.location.pathname.replace('/knowledge/', '')
-
-        console.log(path)
         const { schedule } = this.props
-        const index = schedule.index
+        const index = storage.get('index') || schedule.index
+        const id = this.props.match.params.id
+        this._setData(id, index)
+    }
+
+    componentWillReceiveProps(nextProps) {
+        const id = nextProps.match.params.id
+        const index = storage.get('index')
+        this._setData(id, index)
+    }
+
+    _setData(id, index) {
+        console.log('excute')
         let _this = this
-        fetch('http://172.16.1.115:3001/schedule')
-            .then(data => data.json())
-            .then(data => {
-                let d = data[index]
-                if (d) {
-                    _this.setState({
-                        data: d
-                    })
+        if (typeof id !== 'undefined') {
+            _this._fetchData('http://172.16.1.152:3001/schedule')
+                .then(data => {
+                    let d = data[index]
+                    d = _this._findObj(d, id)
+                    if (d) {
+                        _this.setState({
+                            data: d
+                        })
+                    }
+                })
+        } else {
+            _this._fetchData('http://172.16.1.152:3001/schedule')
+                .then(data => {
+                    let d = data[index]
+                    if (d) {
+                        _this.setState({
+                            data: d
+                        })
+                    }
+                })
+        }
+    }
+
+    _findObj(obj, id) {
+        if (Array.isArray(obj)) {
+            let filters = obj.filter(item => this._findObj(item, id))
+            return filters
+        } else if (typeof obj === 'object' && obj) {
+            if (obj.id === id) return obj
+            for (let key in obj) {
+                let res = this._findObj(obj[key], id)
+
+                if (typeof res === 'object' && !Array.isArray(res)) {
+                    return res
+                } else if (Array.isArray(res) && res.length > 0) {
+                    return res[0]
                 }
-            })
+            }
+        }
+    }
+
+    async _fetchData(url) {
+        let res = await fetch(url)
+        return res.json()
     }
 
     render() {
@@ -41,11 +84,11 @@ class Knowledge extends Component {
             <div className="knowledge">
                 <Top>
                     <Back />
-                    <h1>考点 ({ schedule.name })</h1>
+                    <h1>考点 ({ this.state.data && this.state.data.name })</h1>
                 </Top>
 
                 <div className="knowledge-main">
-                    <CellsTitle>{ schedule.name }---目录</CellsTitle>
+                    <CellsTitle>{ this.state.data && this.state.data.name }---目录</CellsTitle>
                     <Cells>
                         {
                             this.state.data && this.state.data.menu && this.state.data.menu.map((m, index) =>

@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import { Redirect } from 'react-router-dom'
 import './Back.css'
 class Back extends  Component {
 
     historyBack() {
-        window.history.back()
+        window.location.pathname = '/'
     }
 
     render() {

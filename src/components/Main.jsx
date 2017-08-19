@@ -9,6 +9,8 @@ import './Main.css'
 import MyTop from './Top'
 import MyFooter from './Footer'
 
+import * as storage from '../utils/store'
+
 class Main extends Component {
 
   constructor() {
@@ -24,7 +26,7 @@ class Main extends Component {
         icon: <Icon value="waiting"/>,
         label: '模考'
       }, {
-          icon: <Link to="/knowledge"><Icon value="download" /></Link>,
+          icon: <Link to={"/knowledge"}><Icon value="download" /></Link>,
           label: '考点解析'
       }, {
         icon: <Icon value="circle"/>,
@@ -36,20 +38,25 @@ class Main extends Component {
     }
   }
 
+  async _fetchData(url) {
+    let data = await fetch(url)
+    return data.json()
+  }
+
   handleChange(e) {
     if (this.props.index === e.target.value) return
+    window.localStorage.setItem('index', e.target.value)
     this.props.change_schedule_index(e.target.value)
   }
 
   render() {
-    console.log(this.props)
     return (
       <Page>
         <MyTop>
           <div className="select">
             <FormCell select selectPos="before">
               <CellHeader>
-                <Select onChange={this.handleChange.bind(this)} defaultValue={this.props.schedule.index}>
+                <Select onChange={this.handleChange.bind(this)} defaultValue={storage.get('index') || this.props.schedule.index}>
                     {
                       this.props.schedule.options.map((option, index) => {
                         return <option value={index} key={option.id}>{option.name}</option>
