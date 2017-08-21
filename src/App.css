@@ -5,13 +5,17 @@ html, body, #root, .main {
   height: 100%;
 }
 .main {
-  position: relative;
-padding-bottom: 60px;
+    position: relative;
+    padding-bottom: 60px;
     box-sizing: border-box;
+    overflow-y: auto;
 }
 a {
     color: inherit;
 }
 a:hover, a:focus {
     color: inherit;
+}
+img {
+    max-width: 500px;
 }

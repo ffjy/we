@@ -1,0 +1,32 @@
+.question {
+    padding-top: 100px;
+}
+.question-content {
+    background-color: #fff;
+    margin: 50px 50px 0;
+    text-align: center;
+}
+.question-change {
+    margin: 100px 50px 0;
+}
+
+/*question type*/
+.question-select, .question-fill, .question-answer {
+    margin: 50px 50px 0;
+}
+/*选择题*/
+.question-select {
+}
+/*填空题*/
+.question-fill {
+}
+/*解答题*/
+.question-answer {
+}
+
+.question-answer-of-chapter {
+    /*margin-left: 50px;*/
+}
+.question-answer-content {
+    /*margin-left: 50px;*/
+}

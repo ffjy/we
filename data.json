@@ -113,5 +113,497 @@
         }
       ]
     }
-  ]
+  ],
+  "quiz": [{
+    "_id" : "GYsuYXHwsPJZcDzhS",
+    "title" : "随机生成的试卷",
+    "desc" : "系统的原始数据",
+    "isExam" : true,
+    "quiz" : [
+      {
+        "_id" : "EjpA7AS8LENoh76qg",
+        "description" : "关于主语从句的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "3tXNTMGPTDDhbqov5"
+            ],
+            "answer" : "这道关于主语从句题的答案",
+            "explain" : "这道题考察的是主语从句, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "ubBevqGZebNjJFYH3",
+        "description" : "关于生物的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "TyExczbryZrYH8Jbj"
+            ],
+            "answer" : "这道关于生物题的答案",
+            "explain" : "这道题考察的是生物, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "jfwau5AtC7BR9aXaj",
+        "description" : "关于政治的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "YoBwt6BzLaL9g5Sqo"
+            ],
+            "answer" : "这道关于政治题的答案",
+            "explain" : "这道题考察的是政治, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "xwz66ePND7g5iECem",
+        "description" : "关于生物的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "TyExczbryZrYH8Jbj"
+            ],
+            "answer" : "这道关于生物题的答案",
+            "explain" : "这道题考察的是生物, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "h6KXf6rKTc47ZvJyr",
+        "description" : "关于完型填空的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "YqPjbKjSQSvew2877"
+            ],
+            "answer" : "这道关于完型填空题的答案",
+            "explain" : "这道题考察的是完型填空, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "vQXZ5HvApWDE2tDMY",
+        "description" : "关于宋词的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "SRRZM7qnPCwsyAmgg"
+            ],
+            "answer" : "这道关于宋词题的答案",
+            "explain" : "这道题考察的是宋词, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "ZB7RLraftQcxYD8Cg",
+        "description" : "关于立体几何的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "6zeoe6cgYdy8LQXoo"
+            ],
+            "answer" : "这道关于立体几何题的答案",
+            "explain" : "这道题考察的是立体几何, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "T9u5TkWRQhgtXCG8h",
+        "description" : "关于生物的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "TyExczbryZrYH8Jbj"
+            ],
+            "answer" : "这道关于生物题的答案",
+            "explain" : "这道题考察的是生物, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "8sDXKZnbGG8qfJpjo",
+        "description" : "关于宾语从句的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "y9gmsLWQTKvht6geD"
+            ],
+            "answer" : "这道关于宾语从句题的答案",
+            "explain" : "这道题考察的是宾语从句, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "yLRiMNrLccCXYiegg",
+        "description" : "关于物理的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "ahDMjZ5YX4ZDMFHhq"
+            ],
+            "answer" : "这道关于物理题的答案",
+            "explain" : "这道题考察的是物理, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "W6zEB5uheTqT4x2WJ",
+        "description" : "关于地理的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "oMC2HJGQKtquwvwEg"
+            ],
+            "answer" : "这道关于地理题的答案",
+            "explain" : "这道题考察的是地理, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "mXKaxxgw64evHsusr",
+        "description" : "关于化学的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "SFDBNkAciqcxnWnbz"
+            ],
+            "answer" : "这道关于化学题的答案",
+            "explain" : "这道题考察的是化学, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "QBkcbSPLEkBNaohMc",
+        "description" : "关于语文的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "3NuNtEH6GuHpd5Hg3"
+            ],
+            "answer" : "这道关于语文题的答案",
+            "explain" : "这道题考察的是语文, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "nf8oRz4oRBWatnuNs",
+        "description" : "关于数学的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "vxaGco3Ny6cAEgYyC"
+            ],
+            "answer" : "这道关于数学题的答案",
+            "explain" : "这道题考察的是数学, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "3rpTpB49chBW8Penb",
+        "description" : "关于语法的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "u3fopwsC5aCDNo5iR"
+            ],
+            "answer" : "这道关于语法题的答案",
+            "explain" : "这道题考察的是语法, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "q6TqXfpZdv2u5hhgo",
+        "description" : "关于语法填空的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "kstoqyYv2T7J3jGmw"
+            ],
+            "answer" : "这道关于语法填空题的答案",
+            "explain" : "这道题考察的是语法填空, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "MsY6fPN8kxYW6kZLZ",
+        "description" : "关于表语从句的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "SsKWAAj4M7Yj5KDNN"
+            ],
+            "answer" : "这道关于表语从句题的答案",
+            "explain" : "这道题考察的是表语从句, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "ZRzWpG4DDoFZPrKta",
+        "description" : "关于解析几何的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "mvbPXfMDkcBtBkCTp"
+            ],
+            "answer" : "这道关于解析几何题的答案",
+            "explain" : "这道题考察的是解析几何, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "hYAM2veLqSxCBa4cz",
+        "description" : "关于唐诗的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "2GhsKkAZ27Cthuks5"
+            ],
+            "answer" : "这道关于唐诗题的答案",
+            "explain" : "这道题考察的是唐诗, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "PxubibszvMhu3bhA9",
+        "description" : "关于化学的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "SFDBNkAciqcxnWnbz"
+            ],
+            "answer" : "这道关于化学题的答案",
+            "explain" : "这道题考察的是化学, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "P3RfZq6hHuv4fbZBA",
+        "description" : "关于定语从句的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "zsLQXRdmCqkCQT9fo"
+            ],
+            "answer" : "这道关于定语从句题的答案",
+            "explain" : "这道题考察的是定语从句, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "HtvoKi6ocFvtL4tKn",
+        "description" : "关于政治的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "YoBwt6BzLaL9g5Sqo"
+            ],
+            "answer" : "这道关于政治题的答案",
+            "explain" : "这道题考察的是政治, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "JHbtsXcanRLkJ2j2u",
+        "description" : "关于物理的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "ahDMjZ5YX4ZDMFHhq"
+            ],
+            "answer" : "这道关于物理题的答案",
+            "explain" : "这道题考察的是物理, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "a7L3bvaasctQ6nGhT",
+        "description" : "关于综合的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "iMGDhp8ewekstBnhc"
+            ],
+            "answer" : "这道关于综合题的答案",
+            "explain" : "这道题考察的是综合, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "E2Aznv9x4FDRbXduz",
+        "description" : "关于阅读理解的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "8Kdt4GcnxJ969i5Af"
+            ],
+            "answer" : "这道关于阅读理解题的答案",
+            "explain" : "这道题考察的是阅读理解, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "GsB8CAKzycbdyvB7C",
+        "description" : "关于单词填空的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "Z7YCKtBgJJtFnti3m"
+            ],
+            "answer" : "这道关于单词填空题的答案",
+            "explain" : "这道题考察的是单词填空, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "y7aGCNZmAseNowPNT",
+        "description" : "关于识记的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "WfWAJQRbgeoGjtYdW"
+            ],
+            "answer" : "这道关于识记题的答案",
+            "explain" : "这道题考察的是识记, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "3dK5bdtB5Yj8i6wD4",
+        "description" : "关于历史典故的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "6gr2EcyKMs6db3XFb"
+            ],
+            "answer" : "这道关于历史典故题的答案",
+            "explain" : "这道题考察的是历史典故, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "kBQ9WTAxPRRNkbpz6",
+        "description" : "关于写作的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "GJhJJcLykBZnrDMhJ"
+            ],
+            "answer" : "这道关于写作题的答案",
+            "explain" : "这道题考察的是写作, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      },
+      {
+        "_id" : "T3sWn5vcAor5Ppu53",
+        "description" : "关于数学的题目",
+        "source" : "2015年浙江省高考",
+        "children" : [
+          {
+            "knowledge" : [
+              "vxaGco3Ny6cAEgYyC"
+            ],
+            "answer" : "这道关于数学题的答案",
+            "explain" : "这道题考察的是数学, 你会了吗?",
+            "type" : "填空",
+            "difficulty" : "简单"
+          }
+        ]
+      }
+    ],
+    "cls" : [
+      "Aew43LNRDo3wMNJHm"
+    ],
+    "publishing" : true
+  }]
 }

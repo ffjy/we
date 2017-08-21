@@ -8,6 +8,7 @@ import './App.css'
 import Main from './container/Main'
 import Exercise from './container/Exercise'
 import Knowledge from './container/Knowledge'
+import Question from './container/Question'
 
 class App extends Component {
 
@@ -19,6 +20,7 @@ class App extends Component {
             <Route exact path="/" component={Main} />
             <Route path="/exercise" component={Exercise} />
             <Route path="/knowledge/:id?" component={Knowledge} />
+            <Route path="/question/:id?" component={Question} />
           </div>
         </Router>
       </div>

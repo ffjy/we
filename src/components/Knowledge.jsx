@@ -32,7 +32,7 @@ class Knowledge extends Component {
         console.log('excute')
         let _this = this
         if (typeof id !== 'undefined') {
-            _this._fetchData('http://172.16.1.152:3001/schedule')
+            _this._fetchData('http://172.16.1.231:3001/schedule')
                 .then(data => {
                     let d = data[index]
                     d = _this._findObj(d, id)
@@ -43,7 +43,7 @@ class Knowledge extends Component {
                     }
                 })
         } else {
-            _this._fetchData('http://172.16.1.152:3001/schedule')
+            _this._fetchData('http://172.16.1.231:3001/schedule')
                 .then(data => {
                     let d = data[index]
                     if (d) {

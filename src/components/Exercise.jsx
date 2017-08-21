@@ -6,6 +6,7 @@ import {
   CellBody, CellFooter
 } from 'react-weui'
 import Back from './Back'
+import { Link } from 'react-router-dom'
 import './Exercise.css'
 class Exercise extends Component {
   render() {
@@ -20,7 +21,9 @@ class Exercise extends Component {
             <CellsTitle>今日通关</CellsTitle>
             <Cells>
               <Cell access>
-                <CellBody>第十次通关xxxxxxxxx</CellBody>
+                <CellBody>
+                  <Link to={'/question/' + 123}>第十次通关xxxxxxxxx</Link>
+                </CellBody>
                 <CellFooter />
               </Cell>
             </Cells>
