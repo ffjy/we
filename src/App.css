@@ -1,8 +1,11 @@
 body {
     background-color: #eee;  
 }
-html, body, #root, .main {
+html, body, #render-target, .main {
   height: 100%;
+}
+#render-target {
+    height: 100%;
 }
 .main {
     position: relative;

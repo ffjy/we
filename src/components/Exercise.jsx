@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import MyTop from './Top'
-import MyFooter from './Footer'
+import MyTop from './Top.jsx'
+import MyFooter from './Footer.jsx'
 import {
   Cells, Cell, CellsTitle,
   CellBody, CellFooter
 } from 'react-weui'
-import Back from './Back'
+import Back from './Back.jsx'
 import { Link } from 'react-router-dom'
 import './Exercise.css'
 class Exercise extends Component {
